@@ -1,5 +1,7 @@
 'use client'
 
+export const dynamic = 'force-dynamic'
+
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { createClient } from '@/lib/supabase/client'
@@ -68,9 +70,7 @@ export default function LoginPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        style={{
-          width: '100%', maxWidth: 420, position: 'relative',
-        }}
+        style={{ width: '100%', maxWidth: 420, position: 'relative' }}
       >
         {/* Brand */}
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
